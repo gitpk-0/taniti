@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taniti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Neucha&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Neucha&family=Open+Sans:wght@300;400;500;600;700;800&family=Patrick+Hand&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="header alt"
+        style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)), url(images/jeep.jpg);">
+        <nav>
+            <a href="index.html" class="taniti-logo">
+                Taniti
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="lodging.html">LODGING</a></li>
+                    <li><a href="transport.html">TRANSPORT</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <section class="options">
+        <h1>HOW TO GET AROUND THE ISLAND</h1>
+        <p>Public buses serve Taniti City and run from 4:30 a.m. to 11:30 p.m. every day. Private buses serve the rest of the
+            island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near
+            the airport. Bikes and helmets are available to rent from several vendors (helmets are required by law).
+            Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing:
+            this area is easy to explore on foot.</p>
+        <div class="row tp">
+            <div class="options-col">
+                <a href="transport.html">
+                    <img src="images/scooter.jpg" alt="transportation">
+                    <div class="layer">
+                        <h3>BIKES & SCOOTERS</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="options-col">
+                <a href="activities.html">
+                    <img src="images/beachbus2.jpg" alt="activities">
+                    <div class="layer">
+                        <h3>BUSES</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="options-col">
+                <a href="lodging.html">
+                    <img src="images/jeep2.jpg" alt="lodging">
+                    <div class="layer">
+                        <h3>RENTAL CARS</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newletter -->
+    <section class="options">
+        <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
+        <div class="newsletter">
+            <form action="#success">
+                <div class="container">
+                    <p>Receive Daily Tanitian News and Updates</p>
+                </div>
+
+                <div class="container" style="background-color:white">
+                    <input type="text" placeholder="Name" name="name" required>
+                    <input type="text" placeholder="Email address" name="mail" required>
+                    <br>
+                    <label class="subscribe">
+                        <input type="checkbox" checked="checked"> Daily Newsletter
+                    </label>
+                </div>
+
+                <div class="container">
+                    <input type="submit" value="Subscribe" class="subscribe">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="footer">
+            <a href="https://patrick-kell.com" target="_blank">
+                <p>&#169; Patrick Kell 2023</p>
+            </a>
+        </div>
+    </section>
+
+</body>
+
+<!-- Toggle Menu for Mobile -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</html>

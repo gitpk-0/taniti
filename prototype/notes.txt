@@ -1,0 +1,4 @@
+about = about taniti
+campus = activites, lodging, transportation
+blog = faqs
+contact = contact
